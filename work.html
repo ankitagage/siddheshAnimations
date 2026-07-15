@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Page</title>
+<!--Font-->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="style.css" />
+<link rel="canonical" href="https://sidhheshanimations.com/work.html">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3.12.5/dist/ScrollSmoother.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script></head>
+
+<body>
+  <!--Nav bar -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Work Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black text-white h-screen">
+  
+    <!-- Burger Button & Dropdown -->
+    <div class="fixed top-5 left-5 z-50">
+      <div onclick="toggleMenu()" class="group w-10 h-10 relative cursor-pointer transition-all duration-300 ease-in-out">
+        <span class="line absolute top-1 left-0 w-full h-1 bg-white rounded transition-all duration-300 ease-in-out group-[.open]:rotate-45 group-[.open]:top-4"></span>
+        <span class="line absolute top-4 left-0 w-full h-1 bg-white rounded transition-all duration-300 ease-in-out group-[.open]:opacity-0"></span>
+        <span class="line absolute top-7 left-0 w-full h-1 bg-white rounded transition-all duration-300 ease-in-out group-[.open]:-rotate-45 group-[.open]:top-4"></span>
+      </div>
+  
+      <nav id="menu" class="flex-col mt-3 p-2 space-y-2 backdrop-blur-sm rounded-xl opacity-0 pointer-events-none transform -translate-y-2 transition-all duration-300">
+        <a href="index.html#ripple-section" class="block text-white hover:text-cyan-300 transition">HOME</a>
+        <a href="index.html#about" class="block text-white hover:text-cyan-300 transition">ABOUT US</a>
+        <a href="work.html" class="block text-white hover:text-cyan-300 transition">CREATIVE WORK</a>
+        <a href="ai.html" class="block text-white hover:text-cyan-300 transition">AI Work</a>
+        <a href="index.html#work-participation" class="block text-white hover:text-cyan-300 transition">EXPERIANCE</a>
+        <a href="index.html#Contact" class="block text-white hover:text-cyan-300 transition">CONTACT</a>
+      </nav>
+    </div>
+    <section id="ripple-section" 
+    class="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat px-4" 
+    style="background-image: url('assets/Images/Other/image.png');">
+  
+    <div class="max-w-5xl w-full h-[400px] p-6 text-center flex flex-col justify-end">
+      <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 uppercase mb-2" style="font-family: 'Outfit', sans-serif;">
+        Creative Works
+      </h2>
+      
+      <p class="text-white text-base md:text-lg font-light mt-4" style="font-family: 'Poppins', sans-serif;">
+        A showcase of original logo designs, static visuals, and motion graphics — all thoughtfully crafted to tell brand stories, engage audiences, and leave a lasting visual impact.      </p>
+   
+  
+      </div>
+    
+</section>
+<!-- Logos Horizontal Scroll -->
+<section>
+  <div class="relative w-fit mx-auto mt-10">
+    <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold " style="font-family: 'Outfit', sans-serif;">
+      Logos
+      </h2>
+        <!-- Full underline container -->
+        <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-2">
+          <!-- Left Grey -->
+          <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+          <!-- Center Yellow -->
+          <div class="w-16 h-1 bg-yellow-400"></div>
+          <!-- Right Grey -->
+          <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+        </div>
+      </div>
+    <br>
+    <div class="h-[150px] flex items-center justify-center text-center px-6">
+      <p class="text-white text-base md:text-lg font-light" style="font-family: 'Poppins', sans-serif;">
+        A carefully curated collection of original logos, designed to represent distinctive brand identities.<br>
+Each logo is crafted with creativity, attention to detail, and visual balance to create a lasting impression.
+           </p>
+    </div>
+
+        </div>
+        <br>
+        <br>
+        <div class="imageScroll scroll-container flex items-center">
+          <img src="assets/Logos/Anant Logo.jpg" class="img-card">
+            <img src="assets/Logos/Dough Darling.jpg" class="img-card">
+            <img src="assets/Logos/Chilly Apple Logo copy.jpg" class="img-card">
+            <img src="assets/Logos/Flora Avenue.jpg" class="img-card">
+            <img src="assets/Logos/Godhan.jpg" class="img-card">
+            <img src="assets/Logos/Jawahar Logo.jpg" class="img-card">
+            <img src="assets/Logos/Metamorphosis Logo.jpg" class="img-card">
+            <img src="assets/Logos/Morya Park.jpg" class="img-card">
+          </div>
+<!-- Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+<img id="modalImage" src="" class="max-h-[90vh] max-w-[90vw] rounded shadow-lg" />
+</div>
+</section>
+<section>
+  <div class="relative w-fit mx-auto mt-10">
+    <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold " style="font-family: 'Outfit', sans-serif;">
+      Static Creatives
+      </h2>
+        <!-- Full underline container -->
+        <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-2">
+          <!-- Left Grey -->
+          <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+          <!-- Center Yellow -->
+          <div class="w-16 h-1 bg-yellow-400"></div>
+          <!-- Right Grey -->
+          <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+        </div>
+      </div>
+    <br>
+    <div class="h-[150px] flex items-center justify-center text-center px-6">
+      <p class="text-white text-base md:text-lg font-light" style="font-family: 'Poppins', sans-serif;">
+        A curated set of static designs including posts, carousels, web layouts, ads, and banners. <br>
+        Crafted to communicate clearly and reflect brand identity across Instagram, LinkedIn, and Facebook.
+      </p>
+    </div>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="posts">Posts</button>
+        <button class="tab-btn" data-tab="Carousel">Carousel</button>
+        <button class="tab-btn" data-tab="animations">Website Pages</button>
+        <button class="tab-btn" data-tab="reels">Ads</button>
+      </div>
+      <!-- Posts -->
+      <div id="posts" class="tab-content active">
+        <div class="gallary">
+          <!-- Scrollable Row -->
+          <div class="imageScroll scroll-container flex items-center">
+             <!--Rectangle post-->
+              <img src="assets/Images/Posts/01_Mocha-Cafe-&-Bar_Rath-Yatra-Story_3 copy.jpg" class="img-card">
+              <img src="assets/Images/Posts/04_Radisson_Udaipur_SM_Post_Footer.jpg" class="img-card">
+              <img src="assets/Images/Posts/03_Right-Man-Apparel_Story-for-Dusshera.jpg" class="img-card">
+              <img src="assets/Images/Posts/16_Radisson_Udaipur_Story-for-Happy-Karwa-Chauth copy.jpg" class="img-card">
+              <img src="assets/Images/Posts/07_Hotel-Lakend_Story-for-Dusshera3.jpg" class="img-card">
+              <img src="assets/Images/Posts/10_Mocha-Cafe-&-Bar_Krishna-Janmashtami-SM-Post.jpg" class="img-card">
+              <img src="assets/Images/Posts/15_Aestheticx_Maharashtra-day_Story2.jpg" class="img-card">
+              <img src="assets/Images/Posts/18_Mocha-Cafe-&-Bar_SM_Post5.jpg" class="img-card">
+              <img src="assets/Images/Posts/22_Mocha Cafe & Bar_Coffee Day_SM Story.jpg" class="img-card">
+              <img src="assets/Images/Posts/31_Aestheticx_Eid-ul-Adha-Mubarak_Story3.jpg" class="img-card">
+                    </div>
+      
+         </div>
+         <div class="imageScroll scroll-container flex items-center">
+          <!-- square post-->                                         
+
+ <img src="assets/Images/Posts/01_Chilly-Apple-Brand_SM_Post.jpg" class="img-card">
+ <img src="assets/Images/Posts/06_Mocha-Cafe-&-Bar_Frindship-Day_7.jpg" class="img-card"> 
+ <img src="assets/Images/Posts/13_Mocha-Cafe-&-Bar_SM-Post_R1 copy.jpg" class="img-card">                   
+ <img src="assets/Images/Posts/04_Chilly-Apple_Carousel_2.jpg" class="img-card">
+ <img src="assets/Images/Posts/05_Chilly-Apple_Ganesh-Chaturthi_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/05_Hotel-Lakend_SM_Post.jpg" class="img-card">
+ <img src="assets/Images/Posts/07_Chilly-Apple_SM-Post_R1.jpg" class="img-card">
+ <img src="assets/Images/Posts/06_Umbrella-building-care_SM_Post3.jpg" class="img-card">
+ <img src="assets/Images/Posts/07_Lakecity-Honda_SM-Post_R1.jpg" class="img-card">
+ <img src="assets/Images/Posts/11_Akme-Fintrade_SM-Post9.jpg" class="img-card">
+ <img src="assets/Images/Posts/11_Lakecity-Honda_Dusshera_SM-Post2.jpg" class="img-card">
+ <img src="assets/Images/Posts/11_Mocha-Cafe-&-Bar_SM-Post_3.jpg" class="img-card">
+ <img src="assets/Images/Posts/12_Right-Man-Apparel_SM_Post3.jpg" class="img-card">
+ <img src="assets/Images/Posts/13_Lakshmi Silk and Sarees_Special offer for ladies Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/13_Reemaz_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post1.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post2.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post3.jpg" class="img-card">
+ <img src="assets/Images/Posts/15_Right-Man-Apparel_SM_Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post1.jpg" class="img-card">
+ <img src="assets/Images/Posts/17_Career-Heights_Dhanteras-SM-Post2 copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/181_SSSPS _Christmas_Day_1.jpg" class="img-card">
+ <img src="assets/Images/Posts/19_Reemaz_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post1.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post2.jpg" class="img-card">
+ <img src="assets/Images/Posts/14_Akme-Fintrade_MYTH-VS-FACT_SM-Post3.jpg" class="img-card">
+ <img src="assets/Images/Posts/16_Chalk-Academy_SM-Post_R1 copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/17_Career-Heights_Dhanteras-SM-Post2 copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/181_SSSPS _Christmas_Day_1.jpg" class="img-card">
+ <img src="assets/Images/Posts/19_Reemaz_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/19_Right-Man-Apparel_SM_Post2.jpg" class="img-card">
+ <img src="assets/Images/Posts/21_Reemaz_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/24_Reemaz_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/25_Mocha Cafe & Bar_SM Post.jpg" class="img-card">
+ <img src="assets/Images/Posts/25_Right-Man-Apparel_SM_Post2.jpg" class="img-card">
+ <img src="assets/Images/Posts/27_Chalk-Academy_SM-Post copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/29_Akme-Fintrade_SM-Post7 copy.jpg" class="img-card">
+ <img src="assets/Images/Posts/32_Reemaz_Republic Day_SM-Post.jpg" class="img-card">
+<img src="assets/Images/Posts/Bhaubij_Publikcity_Publikcity Media Pvt. Ltd.www.publikcity.com.jpg" class="img-card">
+ <img src="assets/Images/Posts/Christmas Post copy.png" class="img-card">
+ <img src="assets/Images/Posts/Dhanteras_Chai Tapri_Publikcity Media Pvt. Ltd.www.publikcity.com_www.chaitapri.in.jpg" class="img-card">
+ <img src="assets/Images/Posts/Diabetes day_Medezzy_Publikcity Media Pvt. Ltd.www.publikcity.com.jpg" class="img-card">
+ <img src="assets/Images/Posts/Diwali_Chai Tapri_Publikcity Media Pvt. Ltd.www.publikcity.com_www.chaitapri.in.jpg" class="img-card">
+ <img src="assets/Images/Posts/World Population Day _SM Post copy.png" class="img-card">
+
+
+ 
+
+
+ </div>
+ <div class="imageScroll post hidden scroll-container flex items-center">
+                <!-- Medium post-->                                         
+<img src="assets/Images/Posts/12_J-P-Orthopedic-Hospital_SM_Post.jpg" class="img-card">
+<img src="assets/Images/Posts/10_Radisson_Udaipur_SM_Post.jpg" class="img-card">
+<img src="assets/Images/Posts/14_Aestheticx_SM_Post1.jpg" class="img-card">
+<img src="assets/Images/Posts/32_J-P-Orthopedic-Hospital_SM_Post.jpg" class="img-card">
+<img src="assets/Images/Posts/41_Reemaz_Holi_SM-Post.jpg" class="img-card">
+<img src="assets/Images/Posts/39_J-P-Orthopedic-Hospital_Ambedkar Jayanti_SM_Post2.jpg" class="img-card">
+<img src="assets/Images/Posts/45_Akme-Fintrade_SM-Post2 copy.jpg" class="img-card">
+<img src="assets/Images/Posts/47_Akme-Fintrade_Women's-day_SM-Post4.jpg" class="img-card">
+<img src="assets/Images/Posts/Looking to grow your business without the hassle[2 copy 2.jpg" class="img-card">
+<img src="assets/Images/Posts/34_Aestheticx_SM_Post1.jpg" class="img-card">
+<img src="assets/Images/Posts/35_Chalk-Academy_SM-Post1.jpg" class="img-card">
+<img src="assets/Images/Posts/36_Akme-Fintrade_Vasant Panchami_SM-Post5 copy.jpg" class="img-card">
+<img src="assets/Images/Posts/36_Reemaz_Valentines-Day_SM_Post.jpg" class="img-card">
+<img src="assets/Images/Posts/58_Akme-Fintrade_Facts-and-Myths_SM_Post2.jpg" class="img-card">
+<img src="assets/Images/Posts/65_Akme-Fintrade_SM-PostHD.jpg" class="img-card">
+<img src="assets/Images/Posts/81_Radisson_Udaipur_Mother's-Day-Offer_SM-Post---For-Cafe2.jpg" class="img-card">
+<img src="assets/Images/posts/29_Aestheticx_SM_Post1.jpg" class="img-card">
+
+</div>
+
+<!-- load more button -->
+<button
+id="loadMoreBtn"
+class="glow-on-hover focus:outline-none focus:ring-0 focus:shadow-none active:outline-none active:ring-0"
+type="button"
+>
+Show More
+</button>
+</div>
+
+      </div>     
+
+              <!-- Carousel Tab Content -->
+
+              
+              <div id="Carousel" class="tab-content">
+                  <div class="gallery">
+                    <div class="imageScroll scroll-container flex items-center">
+
+                      <!--Rectangle post-->
+                      <img src="assets/Images/Carousel/Carousel---Mockup copy.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/03_Aestheticx_SM_Carousel2.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/18_Reemaz_Carousel_SM-Post5.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/Carousel---Mockup_New.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/04_Reemaz_Carousel_SM-Post.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/07_Reemaz_Carousel_SM-Post.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/11_Ronak Jhuthawat_SM Carousel.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/IFW360_Carousel-Guide-7.jpg" class="img-card">
+                      <img src="assets/Images/Carousel/04_Akme-Fintrade_SM-Post_Carousel---Mockup2.jpg" class="img-card">
+                 </div>
+                     
+            </div>
+              </div>         
+              <!-- Website animation tab -->
+              <div id="animations" class="tab-content">
+                  <div class="gallery">
+                    <div class="imageScroll scroll-container flex items-center">
+
+                      <!--Big post-->
+                      <img src="assets/Images/Website pages/23_Ihmcudaipur_Website_Banner_All_2.png" class="img-card">
+                      <img src="assets/Images/Website pages/23_Ihmcudaipur_Website_Banner_All_3.png" class="img-card">
+                      <img src="assets/Images/Website pages/23_Ihmcudaipur_Website_Banner_All_4.png" class="img-card">
+                      <img src="assets/Images/Website pages/23_Ihmcudaipur_Website_Banner_All.png" class="img-card">
+                      <img src="assets/Images/Website pages/Shrigovind Public.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/26_National-Conference_Banner3.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/26_National-Conference_Banner5.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/03_LEaTHER-GENRAL_Web_banner.gif" class="img-card">
+                      <img src="assets/Images/Website pages/Activa___Offer_Print_Ad___Banner___2x1___Design_in_Ratio.jpg" class="img-card">
+                     
+                      </div>
+
+                    <!--Small post-->
+                    <div class="imageScroll post hidden scroll-container flex items-center">
+                      <img src="assets/Images/Website pages/07_Akme Fintrade_Web Banner_All7-100.jpg" class="img-card">                                 
+                      <img src="assets/Images/Website pages/07_Akme Fintrade_Web Banner_All1-100.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/07_Akme Fintrade_Web Banner_All2-100.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/07_Akme Fintrade_Web Banner_All3-100.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/07_Akme Fintrade_Web Banner_All6-100.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/07_Akme Fintrade_Web Banner_All10-100.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/01_Britti-Kids-and-School-of-Excellence_Website_Banner3.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/01_Career-Heights-_Website-Banner_R2.png" class="img-card">
+                      <img src="assets/Images/Website pages/04_Career-Heights-_Website-Banner.png" class="img-card">
+                      <img src="assets/Images/Website pages/29_Glassy-Furniture_Banner5.jpg" class="img-card">
+                      <img src="assets/Images/Website pages/29_Glassy-Furniture_Banner6.jpg" class="img-card">
+                 
+                </div>
+
+
+                   <!-- load more button-->
+                   <button
+                   id="loadMoreBtn1"
+                   class="glow-on-hover focus:outline-none focus:ring-0 focus:shadow-none active:outline-none active:ring-0"
+                   type="button"
+                   >
+                   Show More
+                   </button>
+                   </div>
+     </div>
+              
+                <!--ADs-->                         
+     <div id="reels" class="tab-content">
+      <div class="gallery">
+        <div class="imageScroll scroll-container flex items-center">
+          <img src="assets/Images/Ads/Ads4.jpg" class="img-card">
+                      <img src="assets/Images/Ads/Ads1.jpg" class="img-card">
+                      <img src="assets/Images/Ads/Ads2.jpg" class="img-card">
+                      <img src="assets/Images/Ads/Ads5.jpg" class="img-card">
+                      <img src="assets/Images/Ads/Ads6.jpg" class="img-card">
+                      <img src="assets/Images/Ads/Ads3.jpg" class="img-card">
+                      </div>
+                      
+      </div>   
+    </div>
+  </section>
+  
+  <div class="w-full text-center" id="contact-content">
+    <section id="Videos" class="px-6 py-10 bg-black text-white">
+      <div class="relative w-fit mx-auto mt-10">
+        <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold " style="font-family: 'Outfit', sans-serif;">
+          Videos          </h2>
+            <!-- Full underline container -->
+            <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-2">
+              <!-- Left Grey -->
+              <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+              <!-- Center Yellow -->
+              <div class="w-16 h-1 bg-yellow-400"></div>
+              <!-- Right Grey -->
+              <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+            </div>
+          </div>
+
+<div class="h-[150px] flex items-center justify-center text-center px-6">
+  <p class="text-white text-base md:text-lg font-light" style="font-family: 'Poppins', sans-serif;">
+    I create bold and engaging motion content for brands, businesses,<br> and creators—designed to connect, explain, and inspire.
+  </p>
+</div>
+<div class="max-w-3xl mx-auto text-center " id="contact-content">
+<section  class="video-gallery">
+
+<div id="videos">
+<div  id="video-item" class="masonry-grid">
+<div  class="masonry-item">
+
+<video src="assets/Videos/04_Umbrella_building_Care_Reel_B.mp4" controls></video>
+</div>
+<div  class="masonry-item">
+<video src="assets/Videos/05_Modern Cafe_Logo_Animation_Logo Intro_Final_Horizontal copy.mp4" controls></video>    
+</div>
+
+<div  class="masonry-item">
+<video src="assets/Videos/13_Radisson_Udaipur_Reel.mp4" controls></video>
+</div>
+
+<div  class="masonry-item">
+  <video src="assets/Videos/06_Mocha Cafe & Bar_Reel.mp4" controls></video>
+</div>
+    <div  class="masonry-item">
+      <video src="assets/Videos/08_Chilly Apple_Reel_A.mp4" controls></video>
+      </div>
+    <div  class="masonry-item">
+      <video src="assets/Videos/000_NRRC_Logo_Intro.mp4" controls></video>
+      </div>
+          <div  class="masonry-item">
+            <video src="assets/Videos/02_Umbrella building Care_Reel_B.mp4" controls></video>
+            </div> 
+                <div  class="masonry-item">
+                  <video src="assets/Videos/CHYD_Animation_Bharat Ganeshpure.mp4" controls></video>
+                  </div>
+            <div  class="masonry-item">
+              <video src="assets/Videos/27_Central_Paark_Navratri Dandiya_Reel_BG.mp4" controls></video>
+              </div>
+      <div  class="masonry-item">
+        <video src="assets/Videos/14_Mocha Cafe & Bar_Reel.mp4" controls></video>
+       </div>
+              <div  class="masonry-item">
+                <video src="assets/Videos/19_Central_Paark_Price_Promotional_Reel_Last_1 Days_B.mp4" controls></video>
+                </div>
+                 
+<div id="video-item" class="masonry-item post hidden">
+<div  class="masonry-item">
+<video src="assets/Videos/09_Central_Paark_Engineer_s Day_Video_Reel_A.mp4" controls></video>
+</div> 
+<div  class="masonry-item">
+<video src="assets/Videos/01_CCA_Marathi_Video_C_1080p.mp4" controls></video>
+</div>
+<div  class="masonry-item">
+  <video src="assets/Videos/47_GMS_Father_s Day_SM_Video_4.mp4" controls></video>
+  </div>
+<div  class="masonry-item">
+  <video src="assets/Videos/02_Modern Cafe_SM_Video_Virtical_1.mp4" controls></video>
+  </div>
+  <div  class="masonry-item">
+    <video src="assets/Videos/02_J P Orthopedic Hospital_Hoil_Reel.mp4" controls></video>
+    </div>
+        <div  class="masonry-item">
+          <video src="assets/Videos/03_Akme Fintrade_TV Ad For videos.mp4" controls></video>
+          </div>
+          <div  class="masonry-item">
+            <video src="assets/Videos/86_GMS_Rangpanchami_SM_Video_A.mp4" controls></video>
+            </div> 
+  <div  class="masonry-item">
+    <video src="assets/Videos/13_Mocha Cafe & Bar_Reel_B.mp4" controls></video>
+   </div>
+  
+          <div  class="masonry-item">
+            <video src="assets/Videos/01_Ghe_Bharari__Reel_A_copy2.mp4" controls></video>
+            </div>
+            <div  class="masonry-item">
+              <video src="assets/Videos/21_Mocha Cafe & Bar_Reel_B.mp4" controls></video>
+              </div>
+      <div  class="masonry-item">
+        <video src="assets/Videos/01_Akme_Fintrade_Reel_B 2.mp4" controls></video>
+        </div>
+                  <div  class="masonry-item">
+                    <video src="assets/Videos/11_RPD_Social Media Reel_Eligibility criteria for MSME Loans.mp4" controls></video>
+                    </div>
+<div  class="masonry-item">
+<video src="assets/Videos/27_Reemaz_Reel.mp4" controls></video>
+</div>
+
+
+</div>
+<div id="video-item" class="masonry-item post hidden">
+  
+    <div  class="masonry-item">
+      <video src="assets/Videos/01_Sea_Queen_Promotion_Video.mp4" controls></video>
+      </div>
+      <div  class="masonry-item">
+        <video src="assets/Videos/15_Radisson_Udaipur_Reel.mp4" controls></video>
+        </div> <div  class="masonry-item">
+          <video src="assets/Videos/17_Radisson_Udaipur_Reel.mp4" controls></video>
+          </div>
+        <div  class="masonry-item">
+          <video src="assets/Videos/02_Akme Fintrade_Reel_A.mp4" controls></video>
+          </div>
+            <div  class="masonry-item">
+              <video src="assets/Videos/29_Chalk Academy_Fathers Day_Reel.mp4" controls></video>
+              </div>
+              <div  class="masonry-item">
+                <video src="assets/Videos/31_Central_Paark_Dussehra_Reel_CP_A.mp4" controls></video>
+                </div>
+                <div  class="masonry-item">
+                  <video src="assets/Videos/13_Lion Sports Arena_Gudi Padwa_Final.mp4" controls></video>
+                 </div>
+           
+             <div  class="masonry-item">
+               <video src="assets/Videos/51_Central_Paark_Progress_Report_Reel_Tower_1, 2 & 3_A.mp4" controls></video>
+               </div> 
+         <div  class="masonry-item">
+          <video src="assets/Videos/05_Modern Cafe_Logo_Animation_Logo Intro_Final_Horizontal copy.mp4" controls></video>
+          </div>
+          <div  class="masonry-item">
+            <video src="assets/Videos/Sidhhesh Dongare Diwali Post_1 copy.mp4" controls></video>
+            </div>
+            <div  class="masonry-item">
+              <video src="assets/Videos/03_GMS_Presentation_Motion Graphics_For BNI.mp4" controls></video>
+              </div> 
+       <div  class="masonry-item">
+        <video src="assets/Videos/08_Foodia Tea_Ingredient_Reel_D.mp4" controls></video>
+        </div>
+         <div  class="masonry-item">
+              <video src="assets/Videos/18_Ghe Bharar_Video_Business_Event_C.mp4" controls></video>
+              </div>
+              
+                <div  class="masonry-item">
+                  <video src="assets/Videos/01_Ghe_Bharari__Reel_A_copy.mp4" controls></video>
+                  </div>
+</div>
+</div>
+<!-- Button -->
+<button
+id="loadMoreBtn2"
+class="glow-on-hover focus:outline-none focus:ring-0 focus:shadow-none active:outline-none active:ring-0"
+type="button"
+>
+Explore More
+</button>
+</section>
+<section id="Contact" class="bg-black text-white pt-16 pb-0 px-4 md:px-10">
+  <div class="max-w-5xl mx-auto text-center rounded-2xl shadow-[0_5px_40px_-5px_rgba(255,255,255,0.2)] p-6">
+    
+    <!-- Yellow Heading -->
+    <a href="index.html#Contact">
+  <h2 class="text-4xl font-bold mb-4 text-white cursor-pointer hover:text-yellow-400 transition duration-300">
+    Get in Touch
+  </h2>
+</a>
+
+    <p class=" text-white/70 mb-10">Let’s build something great — or just chat over ideas, coffee, or creativity.</p>
+
+    <!-- Social Media Icons -->
+    <div class="flex justify-center gap-6 text-3xl">
+      <a href="https://www.instagram.com/sidhhesh_animations/" target="_blank" class="hover:opacity-80 transition">
+        <i class="fab fa-instagram text-pink-600"></i>
+      </a>
+      <a href="https://www.youtube.com/@sidhhesh_animations" target="_blank" class="hover:opacity-80 transition">
+        <i class="fab fa-youtube text-red-600"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sidhhesh-dongare-motion-graphics-designer-and-graphic-designer/" target="_blank" class="hover:opacity-80 transition">
+        <i class="fab fa-linkedin text-blue-600"></i>
+      </a>
+    </div>
+  </div>
+
+  <!--Back button -->
+
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-black p-2 rounded-full shadow-xl z-50 transition hidden"
+  id="backToTop">
+  ⬆
+</button>
+
+</section>
+<br>
+  <p>&copy; 2025 Sidhhesh Designer. All rights reserved.</p>
+      <!-- ✅ place script after the section -->
+<script src="main.js"></script>
+<!-- ripple water -->
+
+  <script>
+    $(document).ready(function() {
+      $('#ripple-section').ripples({
+        resolution: 512,
+        dropRadius: 20,
+        perturbance: 0.04,
+      });
+    });
+  </script>
+<!-- hidden post-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Button 1: POSTS
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    loadMoreBtn?.addEventListener("click", function () {
+      const hiddenPosts = document.querySelectorAll('#posts .post.hidden');
+      hiddenPosts.forEach(post => post.classList.remove("hidden"));
+      loadMoreBtn.style.display = "none";
+    });
+
+    // Button 2: ANIMATIONS
+    const loadMoreBtn1 = document.getElementById("loadMoreBtn1");
+    loadMoreBtn1?.addEventListener("click", function () {
+      const hiddenPosts = document.querySelectorAll('#animations .post.hidden');
+      hiddenPosts.forEach(post => post.classList.remove("hidden"));
+      loadMoreBtn1.style.display = "none";
+    });
+
+    // Button 3: VIDEOS
+    const loadMoreBtn2 = document.getElementById("loadMoreBtn2");
+    loadMoreBtn2?.addEventListener("click", function () {
+      const hiddenPosts = document.querySelectorAll('#videos .post.hidden');
+      hiddenPosts.forEach(post => post.classList.remove("hidden"));
+      loadMoreBtn2.style.display = "none";
+    });
+  });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tab functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons and contents
+                tabBtns.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeLightbox = document.querySelector('.close-lightbox');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        
+        // Get all gallery items
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentIndex = 0;
+        let items = [];
+        
+        // Initialize lightbox items array
+        function initLightboxItems() {
+            items = [];
+            document.querySelectorAll('.gallery-item').forEach((item, index) => {
+                const img = item.querySelector('img');
+                const caption = item.querySelector('.gallery-caption').innerHTML;
+                items.push({
+                    src: img.src,
+                    alt: img.alt,
+                    caption: caption,
+                    index: index
+                });
+            });
+        }
+        
+        // Open lightbox
+        function openLightbox(index) {
+            initLightboxItems();
+            currentIndex = index;
+            updateLightbox();
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+        
+        // Update lightbox content
+        function updateLightbox() {
+            lightboxImg.src = items[currentIndex].src;
+            lightboxImg.alt = items[currentIndex].alt;
+            lightboxCaption.innerHTML = items[currentIndex].caption;
+        }
+        
+        // Close lightbox
+        function closeLightboxFunc() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Re-enable scrolling
+        }
+        
+        // Navigation functions
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            updateLightbox();
+        }
+        
+        function showNext() {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateLightbox();
+        }
+        
+        // Event listeners for gallery items
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                openLightbox(index);
+            });
+        });
+        
+        // Event listeners for lightbox controls
+        closeLightbox.addEventListener('click', closeLightboxFunc);
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+        
+        // Close lightbox when clicking outside image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightboxFunc();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    closeLightboxFunc();
+                } else if (e.key === 'ArrowLeft') {
+                    showPrev();
+                } else if (e.key === 'ArrowRight') {
+                    showNext();
+                }
+            }
+        });
+    });
+    window.addEventListener('resize', function() {
+  if (document.querySelector('.lightbox.active')) {
+      const lightboxContent = document.querySelector('.lightbox-content');
+      lightboxContent.style.top = '50%';
+      lightboxContent.style.left = '50%';
+      lightboxContent.style.transform = 'translate(-50%, -50%)';
+  }
+});
+</script>
+
+<script>
+
+  // Auto-scroll all .imageScroll sections with pause-on-hover
+  function applyAutoScrollToVisibleSections() {
+    document.querySelectorAll(".imageScroll").forEach(container => {
+      const tabParent = container.closest(".tab-content");
+
+      if (tabParent && !tabParent.classList.contains("active")) return;
+
+      let direction = 1;
+      let intervalId;
+
+      function startScroll() {
+        intervalId = setInterval(() => {
+          container.scrollLeft += direction;
+
+          if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+            direction = -1;
+          } else if (container.scrollLeft <= 0) {
+            direction = 1;
+          }
+        }, 20);
+      }
+
+      function stopScroll() {
+        clearInterval(intervalId);
+      }
+
+      startScroll();
+      container.addEventListener("mouseenter", stopScroll);
+      container.addEventListener("mouseleave", startScroll);
+    });
+  }
+
+  // Run when page loads
+  applyAutoScrollToVisibleSections();
+
+  // Re-run on tab switch
+  document.querySelectorAll(".tab-btn").forEach(button => {
+    button.addEventListener("click", () => {
+      setTimeout(() => {
+        applyAutoScrollToVisibleSections();
+      }, 100);
+    });
+  });
+
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        if (img) {
+          var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+      }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+        <script>
+            // Wait until page loads
+            window.addEventListener("DOMContentLoaded", () => {
+              const images = document.querySelectorAll(".img-card");
+              const modal = document.getElementById("imageModal");
+              const modalImg = document.getElementById("modalImage");
+          
+              // Show modal on image click
+              images.forEach(img => {
+                img.addEventListener("click", () => {
+                  modal.classList.remove("hidden");
+                  modal.classList.add("flex");
+                  modalImg.src = img.src;
+                });
+              });
+          
+              // Close modal on click anywhere
+              modal.addEventListener("click", () => {
+                modal.classList.remove("flex");
+                modal.classList.add("hidden");
+                modalImg.src = "";
+              });
+            });
+          </script>
+          
+          <!-- Nav bar -->
+          <script>
+            function toggleMenu() {
+              const menu = document.getElementById('menu');
+              const burger = document.querySelector('.group');
+          
+              menu.classList.toggle('opacity-0');
+              menu.classList.toggle('pointer-events-none');
+              menu.classList.toggle('-translate-y-2');
+              burger.classList.toggle('open');
+            }
+          
+            // Auto-close menu when a nav link is clicked
+            document.addEventListener("DOMContentLoaded", () => {
+              const links = document.querySelectorAll("#menu a");
+              links.forEach(link => {
+                link.addEventListener("click", () => {
+                  toggleMenu();
+                });
+              });
+            });
+          </script>
+          <!--Back Button-->
+          <script>
+            window.addEventListener('scroll', () => {
+  const btn = document.getElementById('backToTop');
+  if (window.scrollY > 300) {
+    btn.classList.remove('hidden');
+  } else {
+    btn.classList.add('hidden');
+  }
+});
+</script>
+
+</script>
+</body>
+     
+</html>
+
+

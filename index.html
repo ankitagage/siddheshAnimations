@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="your-code-here" />
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="canonical" href="https://sidhheshanimations.com/index.html">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollSmoother.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="main.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+  </style>
+  
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;   
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white h-screen">
+  <div 
+  id="smooth-wrapper">
+    <div id="smooth-content">
+<!-- Home Section -->
+ 
+<!--Nav bar -->
+<div class="fixed top-5 left-5 z-50">
+  <!-- Burger Button & Dropdown -->
+  <div class="fixed top-5 left-5 z-50">
+    <div onclick="toggleMenu()" class="group w-10 h-10 relative cursor-pointer transition-all duration-300 ease-in-out">
+      <span class="line absolute top-1 left-0 w-full h-1 bg-white rounded transition-all duration-300 ease-in-out group-[.open]:rotate-45 group-[.open]:top-4"></span>
+      <span class="line absolute top-4 left-0 w-full h-1 bg-white rounded transition-all duration-300 ease-in-out group-[.open]:opacity-0"></span>
+      <span class="line absolute top-7 left-0 w-full h-1 bg-white rounded transition-all duration-300 ease-in-out group-[.open]:-rotate-45 group-[.open]:top-4"></span>
+    </div>
+
+    <nav id="menu" class="flex-col mt-3 p-2 space-y-2 backdrop-blur-sm rounded-xl opacity-0 pointer-events-none transform -translate-y-2 transition-all duration-300">
+      <a href="#ripple-section" class="block text-white hover:text-cyan-300 transition">Home</a>
+      <a href="#about" class="block text-white hover:text-cyan-300 transition">About Us</a>
+      <a href="work.html" class="block text-white hover:text-cyan-300 transition">Creative Work</a>
+      <a href="ai.html" class="block text-white hover:text-cyan-300 transition">AI Work</a>
+      <a href="#work-participation" class="block text-white hover:text-cyan-300 transition">Experience</a>
+      <a href="#Contact" class="block text-white hover:text-cyan-300 transition">Contact</a>
+    </nav>
+  </div>
+</div>
+<section id="ripple-section" class="pt-16 pb-16 bg-black"
+  class="relative h-screen bg-cover bg-center bg-no-repeat" 
+  style="background-image: url('assets/Images/Other/image.png');">
+
+  <!-- 🔹 Background Video -->
+  <video autoplay muted loop playsinline 
+    class="absolute inset-0 w-full h-full object-cover z-10 opacity-70">
+    <source src="assets/Videos/port//Comp 1_1_copy copy.mp4" type="video/mp4" />
+  </video>
+  <br><br><br>
+  <!-- 🔹 Main Section Content (Push right of sidebar) -->
+  <div class="relative z-30 flex flex-col items-center justify-center h-full text-center px-4 ">
+    <img src="assets/Images/Other/Sidhhesh_Profile_Pic2 copy.png" alt="Avatar" style="width: 150px;">
+
+    <h2 class="name-heading text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-yellow-400">
+      <span class="first-name text-yellow-400">Sidhhesh</span>
+      <span class="last-name text-yellow-400">Dongare</span>
+    </h2>
+
+    <h3 class="text-1xl md:text-2xl text-green-400 font-medium mt-2 animate-fade-in-up delay-150 color-splash" style="font-family: 'Outfit', sans-serif;">
+      Motion Graphic Designer
+    </h3>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="px-6 py-10 bg-black bg-opacity-70 text-white" data-color="#06d6a0">
+  <div class="max-w-3xl mx-auto opacity-0" id="about-content">
+    <div class="relative w-fit mx-auto mt-10">
+      <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold mt-2">ABOUT ME</h2>
+
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-2">
+        <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+        <div class="w-16 h-1 bg-yellow-400"></div>
+        <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+      </div>
+    </div>
+    <br><br>
+    <p class="text-lg text-center">
+      I'm a highly skilled Motion Graphic Designer with over 7 years of experience in motion graphics, animation, video editing, and graphic design. Known for my strong creative vision and imaginative approach, I thrive in collaborative, creative environments and enjoy working with like-minded professionals to bring bold ideas to life.
+    </p>
+  </div>
+  </section>
+<!-- Skills Section -->
+<section id="skills">
+  <div class="max-w-3xl mx-auto opacity-0" id="skills-content">
+    <div class="relative w-fit mx-auto mt-10">
+      <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold mt-2">SKILLS</h2>
+
+      <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-2">
+        <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+        <div class="w-16 h-1 bg-yellow-400"></div>
+        <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+      </div>
+    </div>
+    <br><br>
+    <p class="text-lg text-center">
+      Proficient in After Effects, Illustrator, Premiere Pro, Photoshop, and CorelDRAW, I create dynamic visuals, high-quality graphic designs, and deliver professional video editing.
+    </p>
+    <div class="flex flex-wrap justify-center gap-6 px-4 mt-6">
+     <!--After effect -->
+      <div class="hover-container flex flex-col items-center cursor-pointer group" data-percentage="90">
+      <img src="assets/Icons/After effect/After_Effects_copy.png" alt="After Effects"
+           class="icon-bounce bounce-up w-16 sm:w-20 md:w-24 h-auto" />
+      <!-- Vertical Line -->
+    <div class="w-1 bg-white line-animate"></div>
+    <!-- White Dot -->
+    <div class="w-4 h-4 bg-white rounded-full dot-animate"></div>
+    <!-- Percentage Number (below dot) -->
+    <div class="percentage-animate font-bold text-white text-3xl mt-2">90%</div>
+  </div>
+     <!--Illustrator -->
+  <div class="hover-container flex flex-col items-center cursor-pointer group" data-percentage="80">
+      <img src="assets/Icons/Illustrator/Illustrator_copy.png" alt="Illustrator"
+           class="icon-bounce bounce-down w-16 sm:w-20 md:w-24 h-auto" />
+       <!-- Vertical Line -->
+    <div class="w-1 bg-white line-animate"></div>
+    <!-- White Dot -->
+    <div class="w-4 h-4 bg-white rounded-full dot-animate"></div>
+    <!-- Percentage Number (below dot) -->
+    <div class="percentage-animate font-bold text-white text-3xl mt-2">80%</div>
+  </div>
+       <!--CoralDraw -->
+       <div class="hover-container flex flex-col items-center cursor-pointer group" data-percentage="80">
+        <img src="assets/Icons/Corel draw/CorelDRAW_copy.png" alt="CorelDRAW"
+           class="icon-bounce bounce-up w-16 sm:w-20 md:w-24 h-auto" />
+       <!-- Vertical Line -->
+    <div class="w-1 bg-white line-animate"></div>
+    <!-- White Dot -->
+    <div class="w-4 h-4 bg-white rounded-full dot-animate"></div>
+    <!-- Percentage Number (below dot) -->
+    <div class="percentage-animate font-bold text-white text-3xl mt-2">80%</div>
+  </div>
+         <!--Premiere_Pro -->
+         <div class="hover-container flex flex-col items-center cursor-pointer group" data-percentage="70">
+      <img src="assets/Icons/Premiere Pro/Premiere_Pro_copy_2.png" alt="Premiere Pro"
+           class="icon-bounce bounce-down w-16 sm:w-20 md:w-24 h-auto" />
+       <!-- Vertical Line -->
+    <div class="w-1 bg-white line-animate"></div>
+    <!-- White Dot -->
+    <div class="w-4 h-4 bg-white rounded-full dot-animate"></div>
+    <!-- Percentage Number (below dot) -->
+    <div class="percentage-animate font-bold text-white text-3xl mt-2">70%</div>
+  </div>
+           <!--Photoshop -->
+           <div class="hover-container flex flex-col items-center cursor-pointer group" data-percentage="70">
+      <img src="assets/Icons/Photoshop/Photoshop1_copy.png" alt="Photoshop"
+           class="icon-bounce bounce-up w-16 sm:w-20 md:w-24 h-auto" />
+           <!-- Vertical Line -->
+    <div class="w-1 bg-white line-animate"></div>
+    <!-- White Dot -->
+    <div class="w-4 h-4 bg-white rounded-full dot-animate"></div>
+    <!-- Percentage Number (below dot) -->
+    <div class="percentage-animate font-bold text-white text-3xl mt-2">70%</div>
+    </div>
+  </div>   
+                  <!-- Additional Software Knowledge -->
+                  <div class="mt-10 text-center">
+                    <p class="text-lg mb-4 text-white">Also knowledge of software</p>
+                    <div class="flex justify-center space-x-6 ">
+                      <img src="assets/Icons/Maya/Maya_copy.png" alt="Maya" class="h-10 w-10 animate-float-bounce" style="animation-delay: 0s;" />
+                      <img src="assets/Icons/Blender/Blender_copy.png" alt="Blender" class="h-10 w-10 animate-float-bounce" style="animation-delay: 0.2s;" />
+                      <img src="assets/Icons/Power point/Powerpoint_copy.png" alt="PowerPoint" class="h-10 w-10 animate-float-bounce" style="animation-delay: 0.4s;" />
+                      <img src="assets/Icons/Sound Fordge/Sound_Forge_copy.png" alt="Sound Forge" class="h-10 w-10 animate-float-bounce" style="animation-delay: 0.6s;" />
+                      <img src="assets/Icons/3D max/3d_Max_copy.png" alt="3D Max" class="h-10 w-10 animate-float-bounce" style="animation-delay: 0.8s;" />
+                    </div>
+                  </div>
+          </section>
+
+          <section class="bg-black text-white py-16 px-6">
+            <div id="whatido-content" class="max-w-6xl mx-auto text-center opacity-0 translate-y-10">
+              <!-- What I Do -->
+              <div class="relative w-fit mx-auto mt-4">
+                <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold">What I Do</h2>
+                <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-1">
+                  <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+                  <div class="w-16 h-1 bg-yellow-400"></div>
+                  <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+                </div>
+              </div>
+          
+              <!-- Description, closer to heading -->
+              <p class="text-lg text-center mt-8">
+                I create bold and engaging motion content for brands, businesses, and creators— designed to connect, explain, and inspire.
+              </p>
+            </div>
+          </section>
+          
+          
+          
+           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+            <div class="zoom-card bg-black p-6 rounded-2xl shadow-[0_0_25px_rgba(255,255,255,0.15)] opacity-0 scale-90 transition-all duration-700 ">
+                
+              <h3 class="text-xl font-semibold mb-2">Logo & Brand Animations</h3>
+              <p class="text-gray-400">Animated logo reveals and brand elements for intros, outros, reels, and presentations that reinforce identity and professionalism.</p>
+            </div>
+      
+                <div class="zoom-card bg-black p-6 rounded-2xl shadow-[0_0_25px_rgba(255,255,255,0.15)] opacity-0 scale-90 transition-all duration-700 ">
+                
+                  <h3 class="text-xl font-semibold mb-2">Social Media Motion Graphics</h3>
+                  <p class="text-gray-400">Short-form animated content crafted for Instagram, YouTube, and Facebook—designed to boost visibility and engagement using eye-catching motion.</p>
+                </div>
+          
+                <div class="zoom-card bg-black p-6 rounded-2xl shadow-[0_0_25px_rgba(255,255,255,0.15)] opacity-0 scale-90 transition-all duration-700 ">
+                
+                  <h3 class="text-xl font-semibold mb-2">Explainer & Promotional Videos</h3>
+                  <p class="text-gray-400"> Branded animations that explain complex ideas or promote events and products, built with clear storytelling and sharp design.</p>
+                </div>
+          
+                <div class="zoom-card bg-black p-6 rounded-2xl shadow-[0_0_25px_rgba(255,255,255,0.15)] opacity-0 scale-90 transition-all duration-700 ">
+                
+                  <h3 class="text-xl font-semibold mb-2">Event Videos & Reels</h3>
+                  <p class="text-gray-400"> Event promos, recap reels, and dynamic edits that bring the energy and highlights of live or branded experiences to screen.
+                  </p>
+                </div>
+          
+                <div class="zoom-card bg-black p-6 rounded-2xl shadow-[0_0_25px_rgba(255,255,255,0.15)] opacity-0 scale-90 transition-all duration-700 ">
+                
+                  <h3 class="text-xl font-semibold mb-2">Creative Digital Content</h3>
+                  <p class="text-gray-400">YouTube thumbnails, website banners, posts, and mailers—all crafted for digital engagement and aesthetic clarity. Includes ad creatives and platform-optimized visuals.</p>
+                </div>
+          
+                <div class="zoom-card bg-black p-6 rounded-2xl shadow-[0_0_25px_rgba(255,255,255,0.15)] opacity-0 scale-90 transition-all duration-700 ">
+                
+                  <h3 class="text-xl font-semibold mb-2">Print Collaterals</h3>
+                  <p class="text-gray-400">Print media designs including flyers, hoardings, brochures, visiting cards, letterheads, menu cards, hotel branding, sandwich boards, and more.</p>
+                </div>
+              </div>
+            </div>
+            <br>
+          <!-- Centered Button Wrapper -->
+<div class="flex flex-col md:flex-row justify-center items-center gap-16 mt-10">
+            <a href="work.html#ripple-section" class="inline-block animate-bounce">
+            <button type="button" class="btn">
+              <strong>Creative Works</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </a>
+          <!-- Centered Button Wrapper -->
+            <a href="ai.html" class="inline-block  animate-bounce" >
+            <button type="button" class="btn">
+              <strong>AI Works</strong>
+              <div id="container-stars">
+                <div id="stars"></div>
+              </div>
+              <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+            </button>
+          </a>
+          </div>
+
+          </section>
+          
+         
+          <section id="work-participation" class="py-10 bg-black text-white">
+            <div class="max-w-3xl mx-auto opacity-0 translate-y-10" id="work-participation-content">
+              <div class="relative w-fit mx-auto mt-10">
+                <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold mt-2">Work Experience</h2>
+          
+                <div class="absolute top-full left-1/2 transform -translate-x-1/2 flex mt-2">
+                  <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-l"></div>
+                  <div class="w-16 h-1 bg-yellow-400"></div>
+                  <div class="w-16 h-1 bg-gray-400 opacity-30 rounded-r"></div>
+                </div>
+              </div>  
+              <br>
+              <p class="text-lg text-center mt-5">
+                My journey through the creative world of motion graphics, animation, and design.
+              </p>
+          
+            </div>
+            
+            <div class="relative max-w-5xl mx-auto bg-black py-10 px-4 rounded-xl">
+              <div class="relative max-w-5xl mx-auto bg-black py-10 px-4 rounded-xl">
+                <!-- Center vertical line -->
+                
+            <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-600"></div>
+
+            <!-- ENTRY 1 -->
+<div class="relative flex justify-between items-start" data-aos="fade-right">
+  <!-- Left text box -->
+  <div class="w-1/2 pr-8 text-right">
+    <div class="bg-black text-white p-6 rounded-xl shadow-[0_0_25px_1px_rgba(255,255,255,0.15)] border border-white/10">
+      <h3 class="text-xl font-semibold text-yellow-400">Motion Graphics Designer</h3>
+      <p class="text-sm text-gray-400">IFW Techno Creations Pvt. Ltd.</p>
+      <p class="text-gray-300 mt-2">
+        Creating animated videos, motion graphics, reels, banners, and more.
+      </p>
+    </div>
+  </div>
+
+  <!-- Dot -->
+  <div class="absolute left-1/2 top-8 transform -translate-x-1/2 z-20">
+    <div class="w-4 h-4 bg-yellow-400 rounded-full border-4 border-black"></div>
+  </div>
+
+  <!-- Year -->
+  <div class="absolute left-1/2 top-8 transform translate-x-6 z-10">
+    <p class="text-gray-300 mt-2 whitespace-nowrap">2024 – Current</p>
+  </div>
+
+  <div class="w-1/2"></div>
+</div>
+
+  <!-- ENTRY 2: Right content -->
+  <div class="relative flex justify-between items-start" data-aos="fade-left">
+    <div class="w-1/2"></div>
+    <div class="absolute left-1/2 top-8 transform -translate-x-1/2 z-20">
+      <div class="w-4 h-4 bg-yellow-400 rounded-full border-4 border-black"></div>
+    </div>
+    <div class="absolute left-1/2 top-8 transform -translate-x-[calc(100%+1rem)] z-10">
+      <p class="text-gray-300 mt-2 whitespace-nowrap">2021 - 2024</p>
+    </div>
+    <div class="w-1/2 pl-8 text-left">
+      <div class="bg-black text-white p-6 rounded-xl shadow-[0_0_25px_1px_rgba(255,255,255,0.15)] border border-white/10">
+        <h3 class="text-xl font-semibold text-yellow-400">Animator & Sr. Graphic Designer</h3>
+        <p class="text-sm text-gray-400">Giri Media Services Pvt. Ltd.</p>
+        <p class="text-gray-300 mt-2">
+          Created motion graphics, reels, ads, flyers, and event videos.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  <!-- ENTRY 3: Left content -->
+  <div class="relative flex justify-between items-start" data-aos="fade-right">
+    <div class="w-1/2 pr-8 text-right">
+      <div class="bg-black text-white p-6 rounded-xl shadow-[0_0_25px_1px_rgba(255,255,255,0.15)] border border-white/10">
+        <h3 class="text-xl font-semibold text-yellow-400">Graphic Designer</h3>
+        <p class="text-sm text-gray-400">MAA Advertising</p>
+        <p class="text-gray-300 mt-2">
+          Designing logos, newspapers, hoardings, brochures, and banners.
+        </p>
+      </div>
+    </div>
+    <div class="absolute left-1/2 top-8 transform -translate-x-1/2 z-20">
+      <div class="w-4 h-4 bg-yellow-400 rounded-full border-4 border-black"></div>
+    </div>
+    <div class="absolute left-1/2 top-8 transform translate-x-6 z-10">
+      <p class="text-gray-300 mt-2 whitespace-nowrap">2017 - 2021</p>
+    </div>
+    <div class="w-1/2"></div>
+  </div>
+</div>
+
+          </section>
+          <div class="flex justify-center items-center">
+            <a href="assets/Images/Other/05_Sidhhesh Dongare_Portfolio_2025.-2 copy.pdf" download
+      class="inline-block mt-4 px-6 py-3 text-black bg-[#facc15] rounded-full shadow-md hover:bg-yellow-300 transition-all duration-300 ">
+      Download CV
+   </a>
+  </div>
+   <br><br>
+   <section id="Contact" class="bg-black text-white pt-16 pb-0 px-4 md:px-10">
+    <div class="max-w-5xl mx-auto text-center rounded-2xl shadow-[0_5px_40px_-5px_rgba(255,255,255,0.2)] p-6">
+      
+      <!-- Yellow Heading -->
+      <h2 class="text-4xl font-bold mb-4 text-white">Get in Touch</h2>
+  
+      <p class=" text-white/70 mb-10">Let’s build something great — or just chat over ideas, coffee, or creativity.</p>
+  
+      <!-- Contact Info -->
+      <div class="flex justify-center flex-wrap gap-6 mb-10 text-white text-base">
+        <a href="mailto:sidhheshdesigner@gmail.com" class="text-xl flex items-center gap-2 hover:underline">
+          <i class="fas fa-envelope"></i> sidhheshdesigner@gmail.com
+        </a>
+        <a href="tel:+919923205063" class="text-xl flex items-center gap-2 hover:underline">
+          <i class="fa fa-phone text-white"></i> +91 99232 05063
+        </a>
+        <a href="https://wa.me/919923205063" target="_blank" class="text-xl flex items-center gap-2 hover:underline">
+          <i class="fab fa-whatsapp text-green-500"></i> WhatsApp
+        </a>
+      </div>
+  
+      <!-- Social Media Icons -->
+      <div class="flex justify-center gap-6 text-3xl">
+        <a href="https://www.instagram.com/sidhhesh_animations/" target="_blank" class="hover:opacity-80 transition">
+          <i class="fab fa-instagram text-pink-600"></i>
+        </a>
+        <a href="https://www.youtube.com/@sidhhesh_animations" target="_blank" class="hover:opacity-80 transition">
+          <i class="fab fa-youtube text-red-600"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/sidhhesh-dongare-motion-graphics-designer-and-graphic-designer/" target="_blank" class="hover:opacity-80 transition">
+          <i class="fab fa-linkedin text-blue-600"></i>
+        </a>
+      </div>
+    </div>
+    <!--Back button -->
+  <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="fixed bottom-6 right-6 bg-yellow-400 hover:bg-yellow-500 text-black p-2 rounded-full shadow-xl z-50 transition hidden"
+  id="backToTop">
+  ⬆
+</button>
+  </section>
+  
+  <br><br>
+<!-- ✅ FOOTER -->
+<footer class="bg-black text-white text-center pt-0 pb-6">
+  <p>&copy; 2025 Sidhhesh Designer. All rights reserved.</p>
+</footer>
+  
+      <!-- ✅ place script after the section -->
+
+  <!-- ripple water -->
+
+  <script>
+    $(document).ready(function() {
+      $('#ripple-section').ripples({
+        resolution: 512,
+        dropRadius: 20,
+        perturbance: 0.04,
+      });
+    });
+  </script>
+
+<script>
+// About
+gsap.fromTo("#about-content", { opacity: 0, x: -100 }, {
+  scrollTrigger: {
+    trigger: "#about",
+    start: "top 80%",
+  },
+  opacity: 1,
+  x: 0,
+  duration: 1
+});
+
+// Skills
+gsap.fromTo("#skills-content", { opacity: 0, x: 100 }, {
+  scrollTrigger: {
+    trigger: "#skills-content", // ✅ Corrected
+    start: "top 80%",
+  },
+  opacity: 1,
+  x: 0,
+  duration: 1
+});
+
+//What I Do
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to("#whatido-content", {
+    scrollTrigger: {
+      trigger: "#whatido-content",
+      start: "top 80%", // Adjust this value for when to trigger
+      toggleActions: "play reverse play reverse"
+
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+// Work Experiance 
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.to("#work-participation-content", {
+    scrollTrigger: {
+      trigger: "#work-participation-content",
+      start: "top 80%",
+      toggleActions: "play none none none"
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+</script>
+<!-- Nav bar -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    const burger = document.querySelector('.group');
+
+    menu.classList.toggle('opacity-0');
+    menu.classList.toggle('pointer-events-none');
+    menu.classList.toggle('-translate-y-2');
+    burger.classList.toggle('open');
+  }
+
+  // Auto-close menu when a nav link is clicked
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("#menu a");
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        toggleMenu();
+      });
+    });
+  });
+</script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const zoomCards = document.querySelectorAll('.zoom-card');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('zoom-in');
+            }, i * 200);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      zoomCards.forEach(card => observer.observe(card));
+    });
+  </script>
+     <!--Back button ⬆-->
+  <script>
+    window.addEventListener('scroll', () => {
+const btn = document.getElementById('backToTop');
+if (window.scrollY > 300) {
+btn.classList.remove('hidden');
+} else {
+btn.classList.add('hidden');
+}
+});
+</script>
+ 
+    </section>
+  </div>
+</div>
+</body>
+</html>
+
+
