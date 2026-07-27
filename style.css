@@ -1553,3 +1553,26 @@ strong {
 .scroll-container {
   scrollbar-width: none;
 }
+
+/* home page videos are displayed */
+
+.video-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background:#111;
+    transition: all .35s ease;
+}
+
+.video-card video{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    display:block;
+}
+
+.video-card:hover{
+    transform: translateY(-6px) scale(1.05);
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+    z-index:10;
+}
