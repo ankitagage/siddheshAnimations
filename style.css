@@ -1568,3 +1568,9 @@ strong {
     height:auto;      /* Keep original aspect ratio */
     object-fit:unset; /* Don't crop */
 }
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    align-items:start;
+}
