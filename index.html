@@ -744,7 +744,37 @@ btn.classList.add('hidden');
 }
 });
 </script>
- 
+
+                <!--home page videos are displayed --> 
+<script>
+    const videos = document.querySelectorAll(".portfolio-video");
+
+videos.forEach(video => {
+
+    const card = video.closest(".video-card");
+
+    card.addEventListener("mouseenter", () => {
+
+        videos.forEach(v => {
+            if (v !== video) {
+                v.pause();
+                v.currentTime = 0;
+            }
+        });
+
+        video.play();
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        video.pause();
+        video.currentTime = 0;
+
+    });
+
+});
+</script>
     </section>
   </div>
 </div>
