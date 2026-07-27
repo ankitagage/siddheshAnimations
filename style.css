@@ -1557,13 +1557,14 @@ strong {
 /* home page videos are displayed */
 
 .video-card{
-    overflow:hidden;
     border-radius:16px;
-    transition:0.35s ease;
+    overflow:hidden;
+    background:#111;
 }
 
 .video-card video{
-    width:100%;
-    height:auto;
     display:block;
+    width:100%;
+    height:auto;      /* Keep original aspect ratio */
+    object-fit:unset; /* Don't crop */
 }
