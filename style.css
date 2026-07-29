@@ -1611,3 +1611,20 @@ strong {
     object-fit: cover;
     display: block;
 }
+.video-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.15);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.video-card:active::after {
+    opacity: 1;
+}
