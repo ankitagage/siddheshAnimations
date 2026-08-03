@@ -1628,3 +1628,73 @@ strong {
 .video-card:active::after {
     opacity: 1;
 }
+
+***************
+.video-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.video-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .6s ease, filter .4s ease;
+}
+
+/* Hover Effect */
+.video-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.video-card:hover video {
+    transform: scale(1.08);
+    filter: brightness(1.1);
+}
+
+/* Dark Overlay */
+.video-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.15);
+    opacity: 0;
+    transition: opacity .35s ease;
+    z-index: 1;
+}
+
+.video-card:hover::before {
+    opacity: 1;
+}
+
+/* Play Button */
+.video-card::after {
+    content: "▶";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.7);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.15);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .35s ease;
+    z-index: 2;
+}
+
+.video-card:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
