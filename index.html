@@ -235,20 +235,11 @@
         </p>
     </div>
         ***********
-       <div id="videoModal" class="video-modal">
-    <div class="video-content">
-        <span class="close-video">&times;</span>
+      <div id="videoModal">
+    <div class="modal-content">
+        <span id="closeVideo">&times;</span>
 
-        <video id="modalVideo" controls playsinline>
-            <source src="https://res.cloudinary.com/vbcgaayb/video/upload/v1785089671/01_IFW-WS_New_Website_Reel_lta16q.mp4" type="video/mp4">
-        </video> 
-      <video id="modalVideo" controls playsinline>
-            <source src="https://res.cloudinary.com/vbcgaayb/video/upload/v1785090094/02_Chilly_Apple_Krishna_Janmashtami_Reel_B_wdkrfp.mp4" type="video/mp4">
-        </video>
-       <video id="modalVideo" controls playsinline>
-            <source src="https://res.cloudinary.com/vbcgaayb/video/upload/v1785089671/01_IFW-WS_New_Website_Reel_lta16q.mp4" type="video/mp4">
-        </video>
-      
+        <video id="popupVideo" controls playsinline></video>
     </div>
 </div>
         ****************
@@ -759,61 +750,48 @@ videos.forEach(video => {
                   </script>
               
 ************:
-                <script>
-                  const modal = document.getElementById("videoModal");
-const modalVideo = document.getElementById("modalVideo");
-const closeBtn = document.querySelector(".close-video");
+                const modal = document.getElementById("videoModal");
+const player = document.getElementById("popupVideo");
 
-document.querySelectorAll(".video-link").forEach(item => {
+document.querySelectorAll(".video-link").forEach(link=>{
 
-    item.addEventListener("click", () => {
+    link.addEventListener("click",function(e){
+
+        e.preventDefault();   // IMPORTANT: stops opening/downloading
+
+        player.src = this.dataset.video;
 
         modal.classList.add("active");
 
-        modalVideo.src = item.dataset.video;
-
-        modalVideo.load();
-
-        modalVideo.play();
+        player.play();
 
     });
 
 });
 
-function closeVideo(){
+document.getElementById("closeVideo").onclick=function(){
 
-    modalVideo.pause();
+    player.pause();
 
-    modalVideo.currentTime = 0;
-
-    modalVideo.src = "";
+    player.src="";
 
     modal.classList.remove("active");
 
-}
+};
 
-closeBtn.addEventListener("click", closeVideo);
-
-modal.addEventListener("click", e=>{
+modal.onclick=function(e){
 
     if(e.target===modal){
 
-        closeVideo();
+        player.pause();
+
+        player.src="";
+
+        modal.classList.remove("active");
 
     }
 
-});
-
-document.addEventListener("keydown",e=>{
-
-    if(e.key==="Escape"){
-
-        closeVideo();
-
-    }
-
-});
-                </script>
+};
     </section>
   </div>
 </div>
