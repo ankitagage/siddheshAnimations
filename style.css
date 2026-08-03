@@ -1630,46 +1630,45 @@ strong {
 }
 
 ***************
-.video-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 16px;
-    cursor: pointer;
-    transition: transform .4s ease, box-shadow .4s ease;
+.video-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:16px;
+    transition:all .45s cubic-bezier(.2,.8,.2,1);
+    cursor:pointer;
 }
 
-.video-card video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform .6s ease, filter .4s ease;
+.portfolio-video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .6s ease;
+    pointer-events:none;   /* Prevent Safari controls */
 }
 
-/* Hover Effect */
-.video-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+/* Hover Animation */
+.video-card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+    z-index:20;
 }
 
-.video-card:hover video {
-    transform: scale(1.08);
-    filter: brightness(1.1);
+.video-card:hover .portfolio-video{
+    transform:scale(1.12);
 }
 
-/* Dark Overlay */
-.video-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.15);
-    opacity: 0;
-    transition: opacity .35s ease;
-    z-index: 1;
+/* Optional subtle overlay */
+.video-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.12);
+    opacity:0;
+    transition:.35s;
+    z-index:1;
 }
 
-.video-card:hover::before {
-    opacity: 1;
+.video-card:hover::before{
+    opacity:1;
 }
-
-
