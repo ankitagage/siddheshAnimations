@@ -739,6 +739,26 @@ videos.forEach(video => {
 
 });
                   </script>
+<!-- Animate on page load.-->
+                <script>
+                  const tl = gsap.timeline();
+
+tl.from(".hero-img", {
+    scale: 0.8,
+    opacity: 0,
+    duration: 1
+})
+.from(".hero-title", {
+    y: 60,
+    opacity: 0,
+    duration: 0.8
+}, "-=0.5")
+.from(".hero-subtitle", {
+    y: 30,
+    opacity: 0,
+    duration: 0.6
+}, "-=0.4");
+                </script>
     </section>
   </div>
 </div>
