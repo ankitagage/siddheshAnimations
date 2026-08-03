@@ -1674,6 +1674,7 @@ strong {
 
 /* Play Button */
 .video-card::after {
+    display: none;
     content: "▶";
     position: absolute;
     top: 50%;
@@ -1695,7 +1696,6 @@ strong {
 }
 
 .video-card:hover::after {
-    display: none;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
