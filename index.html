@@ -716,9 +716,27 @@ videos.forEach(video => {
 
 });
 </script>
+                *************
+                <script>
+                const videos = document.querySelectorAll(".portfolio-video");
+
+videos.forEach(video => {
+    const card = video.closest(".video-card");
+
+    card.addEventListener("mouseenter", () => {
+        video.currentTime = 0;
+        video.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+});
     </section>
   </div>
 </div>
+      </script>
 </body>
 </html>
 
