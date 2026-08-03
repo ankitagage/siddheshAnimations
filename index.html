@@ -751,7 +751,62 @@ videos.forEach(video => {
 });
                   </script>
               
+************:
+                <script>
+                  const modal = document.getElementById("videoModal");
+const modalVideo = document.getElementById("modalVideo");
+const closeBtn = document.querySelector(".close-video");
 
+document.querySelectorAll(".video-link").forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        modal.classList.add("active");
+
+        modalVideo.src = item.dataset.video;
+
+        modalVideo.load();
+
+        modalVideo.play();
+
+    });
+
+});
+
+function closeVideo(){
+
+    modalVideo.pause();
+
+    modalVideo.currentTime = 0;
+
+    modalVideo.src = "";
+
+    modal.classList.remove("active");
+
+}
+
+closeBtn.addEventListener("click", closeVideo);
+
+modal.addEventListener("click", e=>{
+
+    if(e.target===modal){
+
+        closeVideo();
+
+    }
+
+});
+
+document.addEventListener("keydown",e=>{
+
+    if(e.key==="Escape"){
+
+        closeVideo();
+
+    }
+
+});
+                </script>
     </section>
   </div>
 </div>
