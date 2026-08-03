@@ -1672,30 +1672,4 @@ strong {
     opacity: 1;
 }
 
-/* Play Button */
-.video-card::after {
-    display: none;
-    content: "▶";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(.7);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: rgba(255,255,255,.15);
-    backdrop-filter: blur(8px);
-    color: #fff;
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: all .35s ease;
-    z-index: 2;
-}
 
-.video-card:hover::after {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-}
