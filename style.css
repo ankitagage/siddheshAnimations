@@ -1672,37 +1672,3 @@ strong {
 .video-card:hover::before{
     opacity:1;
 }
-************:
-#videoModal{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.9);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
-}
-
-#videoModal.active{
-    display:flex;
-}
-
-.modal-content{
-    position:relative;
-    width:90%;
-    max-width:1000px;
-}
-
-#popupVideo{
-    width:100%;
-    border-radius:12px;
-}
-
-#closeVideo{
-    position:absolute;
-    top:-45px;
-    right:0;
-    color:#fff;
-    font-size:40px;
-    cursor:pointer;
-}
