@@ -1672,4 +1672,43 @@ strong {
 .video-card:hover::before{
     opacity:1;
 }
+************:
+.video-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:9999;
+}
+
+.video-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.video-content{
+    position:relative;
+    width:90%;
+    max-width:1100px;
+}
+
+#modalVideo{
+    width:100%;
+    border-radius:16px;
+    outline:none;
+}
+
+.close-video{
+    position:absolute;
+    right:-10px;
+    top:-50px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+}
 
