@@ -135,20 +135,7 @@
 </div>
 </section>
 
-  *********:
-      <section>
-        <div id="videoModal" class="video-modal">
-    <span class="close-video">&times;</span>
-<!--Video 1-->
-    <video id="modalVideo" controls playsinline>
-       <source src="https://res.cloudinary.com/vbcgaayb/video/upload/v1785742156/05_Ghe_Bharari_Belgaum_Reel_Final_i6og2c.mp4" type="video/mp4">
-    </video>
-          <!--Video 2-->
-    <video id="modalVideo" controls playsinline>
-       <source src="https://res.cloudinary.com/vbcgaayb/video/upload/v1785742156/05_Ghe_Bharari_Belgaum_Reel_Final_i6og2c.mp4" type="video/mp4">
-    </video>
-</div>
-      </section>
+
 <!-- About Section -->
 <section id="about" class="px-6 py-10 bg-black bg-opacity-70 text-white" data-color="#06d6a0">
   <div class="max-w-3xl mx-auto opacity-0" id="about-content">
@@ -745,54 +732,7 @@ videos.forEach(video => {
 
 });
                   </script>
-                ******:
-                <script>
-                  const modal = document.getElementById("videoModal");
-const modalVideo = document.getElementById("modalVideo");
-const closeBtn = document.querySelector(".close-video");
-
-document.querySelectorAll(".video-card").forEach(card=>{
-
-    card.addEventListener("click",()=>{
-
-        const src = card.dataset.video;
-
-        modal.classList.add("active");
-
-        modalVideo.src = src;
-
-        modalVideo.load();
-
-        modalVideo.play();
-
-    });
-
-});
-
-closeBtn.onclick = ()=>{
-
-    modal.classList.remove("active");
-
-    modalVideo.pause();
-
-    modalVideo.src="";
-
-};
-
-modal.onclick=(e)=>{
-
-    if(e.target===modal){
-
-        modal.classList.remove("active");
-
-        modalVideo.pause();
-
-        modalVideo.src="";
-
-    }
-
-};
-                </script>
+              
 
     </section>
   </div>
