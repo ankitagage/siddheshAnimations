@@ -1672,3 +1672,38 @@ strong {
 .video-card:hover::before{
     opacity:1;
 }
+
+***********
+.video-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:9999;
+}
+
+.video-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+#modalVideo{
+    width:90%;
+    max-width:1100px;
+    max-height:90vh;
+    border-radius:12px;
+}
+
+.close-video{
+    position:absolute;
+    top:20px;
+    right:30px;
+    color:#fff;
+    font-size:45px;
+    cursor:pointer;
+}
