@@ -752,7 +752,22 @@ Explore More
   }
 });
 </script>
+  <!--Ripple sectiond cards -->
+  <script>
+document.querySelectorAll(".creative-card video").forEach(video => {
 
+    const card = video.closest(".creative-card");
+
+    card.addEventListener("mouseenter", () => {
+        video.play();
+    });
+
+    card.addEventListener("mouseleave", () => {
+        video.pause();
+        video.currentTime = 0;
+    });
+
+});
 </script>
 </body>
      
