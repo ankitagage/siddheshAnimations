@@ -52,47 +52,25 @@
         <a href="index.html#Contact" class="block text-white hover:text-cyan-300 transition">CONTACT</a>
       </nav>
     </div>
-    <section id="ripple-section"
-    class="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat px-4"
+   
+         <section id="ripple-section" 
+    class="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat px-4" 
     style="background-image: url('https://res.cloudinary.com/vbcgaayb/image/upload/v1784115799/image_jasnba.png');">
-
-    <!-- ADD THIS -->
-    <div class="creative-wrapper">
-<a href="https://res.cloudinary.com/vbcgaayb/image/upload/v1784221791/29_Glassy-Furniture_Banner6_tttizi.jpg"
-   target="_blank"
-   class="creative-card left-card">
-    <img src="https://res.cloudinary.com/vbcgaayb/image/upload/v1784221791/29_Glassy-Furniture_Banner6_tttizi.jpg">
-</a>
-
-        <div class="creative-card center-card">
-    <video
-        muted
-        loop
-        playsinline
-        preload="metadata"
-        poster="https://res.cloudinary.com/vbcgaayb/image/upload/v1784221791/29_Glassy-Furniture_Banner6_tttizi.jpg">
-        <source src="https://res.cloudinary.com/vbcgaayb/video/upload/f_auto,q_auto/v1785089671/01_IFW-WS_New_Website_Reel_lta16q.mp4" type="video/mp4">
-    </video>
-</div>
-       <a href="https://res.cloudinary.com/vbcgaayb/image/upload/v1784221108/Carousel---Mockup_mpxhm4.jpg"
-   target="_blank"
-   class="creative-card right-card">
-    <img src="https://res.cloudinary.com/vbcgaayb/image/upload/v1784221108/Carousel---Mockup_mpxhm4.jpg">
-</a>
-
-    </div>
-
-    <div class="max-w-5xl w-full h-[400px] p-6 text-center flex flex-col justify-end">
-        <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 uppercase mb-2">
-            Creative Works
-        </h2>
-
-        <p class="text-white text-base md:text-lg font-light mt-4">
+  
+<div class="max-w-5xl w-full h-[400px] p-6 text-center flex flex-col justify-end">
+  <h2 class="text-3xl md:text-4xl font-bold text-yellow-400 uppercase mb-2" style="font-family: 'Outfit', sans-serif;">
+        Creative Works
+      </h2>
+      
+      <p class="text-white text-base md:text-lg font-light mt-4" style="font-family: 'Poppins', sans-serif;">
         A showcase of original logo designs, static visuals, and motion graphics — all thoughtfully crafted to tell brand stories, engage audiences, and leave a lasting visual impact.      </p>
-        </p>
-    </div>
-
+   
+  
+      </div>
+    
 </section>
+
+   
 <section>
   <div class="relative w-fit mx-auto mt-10">
     <h2 class="text-2xl uppercase md:text-3xl text-yellow-400 font-semibold " style="font-family: 'Outfit', sans-serif;">
@@ -752,23 +730,7 @@ Explore More
   }
 });
 </script>
-  <!--Ripple sectiond cards -->
-  <script>
-document.querySelectorAll(".creative-card video").forEach(video => {
-
-    const card = video.closest(".creative-card");
-
-    card.addEventListener("mouseenter", () => {
-        video.play();
-    });
-
-    card.addEventListener("mouseleave", () => {
-        video.pause();
-        video.currentTime = 0;
-    });
-
-});
-</script>
+ 
 </body>
      
 </html>
