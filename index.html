@@ -775,15 +775,22 @@ videos.forEach(video => {
                               <!-- Featured Motion Graphics video paused -->
 
 <script>
-document.querySelectorAll(".portfolio-video").forEach(video => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    video.addEventListener("click", function () {
+    const videos = document.querySelectorAll(".portfolio-video");
 
-        if (this.paused) {
-            this.play();
-        } else {
-            this.pause();
-        }
+    videos.forEach(function (video) {
+
+        video.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
 
     });
 
