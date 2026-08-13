@@ -65,11 +65,15 @@
 </div>
 <section
   id="ripple-section"
-  class="relative h-screen bg-cover bg-center bg-no-repeat pt-16 pb-16 bg-black"
-  style="background-image: url('https://res.cloudinary.com/vbcgaayb/image/upload/v1784115799/image_jasnba.png');">
-  <br><br><br>
-  
-<!-- Background Video -->
+  class="relative h-screen overflow-hidden bg-black pt-16 pb-16">
+
+  <!-- Background Image -->
+  <img
+    src="https://res.cloudinary.com/vbcgaayb/image/upload/v1784115799/image_jasnba.png"
+    alt=""
+    class="absolute inset-0 w-full h-full object-cover z-0">
+
+  <!-- Background Video -->
   <video
     autoplay
     muted
@@ -79,23 +83,34 @@
     class="absolute inset-0 w-full h-full object-cover z-10 opacity-70">
 
     <source
-        src="https://res.cloudinary.com/vbcgaayb/video/upload/q_auto,f_mp4,ac_none,w_1280,h_720,c_fill/v1784010355/Comp_1_1_copy_n6khcy.webm"
-        type="video/mp4">
+      src="https://res.cloudinary.com/vbcgaayb/video/upload/q_auto,f_mp4,ac_none,w_1280,h_720,c_fill/v1784010355/Comp_1_1_copy_n6khcy.webm"
+      type="video/mp4">
 
-</video>
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/20 z-20"></div>
+
   <!-- Content -->
   <div class="relative z-30 flex flex-col items-center justify-center h-full text-center px-4">
-      <img
-          src="https://res.cloudinary.com/vbcgaayb/image/upload/v1784119716/Sidhhesh_Profile_Pic2_copy_bbvfzh.png"
-          alt="Avatar"
-          style="width:150px;">
-      <h2 class="name-heading text-4xl text-yellow-400">
-          Sidhhesh Dongare
-      </h2>
-    <h3 class="text-1xl md:text-2xl text-green-400 font-medium mt-2 animate-fade-in-up delay-150 color-splash" style="font-family: 'Outfit', sans-serif;">
-          Motion Graphic Designer
-      </h3>
+
+    <img
+      src="https://res.cloudinary.com/vbcgaayb/image/upload/v1784119716/Sidhhesh_Profile_Pic2_copy_bbvfzh.png"
+      alt="Avatar"
+      style="width:150px;">
+
+    <h2 class="name-heading text-4xl text-yellow-400">
+      Sidhhesh Dongare
+    </h2>
+
+    <h3
+      class="text-1xl md:text-2xl text-green-400 font-medium mt-2 animate-fade-in-up delay-150 color-splash"
+      style="font-family: 'Outfit', sans-serif;">
+      Motion Graphic Designer
+    </h3>
+
   </div>
+
 </section>
 
 <!-- About Section -->
