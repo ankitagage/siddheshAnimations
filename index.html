@@ -595,17 +595,19 @@
       <!-- ✅ place script after the section -->
 
   <!-- ripple water -->
+<script>
+$(document).ready(function() {
 
-  <script>
-    $(document).ready(function() {
-      $('#ripple-section').ripples({
-        resolution: 512,
-        dropRadius: 20,
-        perturbance: 0.04,
-      });
+  if (window.innerWidth >= 768) {
+    $('#ripple-section').ripples({
+      resolution: 512,
+      dropRadius: 20,
+      perturbance: 0.04
     });
-  </script>
+  }
 
+});
+</script>
 <script>
 // About
 gsap.fromTo("#about-content", { opacity: 0, x: -100 }, {
