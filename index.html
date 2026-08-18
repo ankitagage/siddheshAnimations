@@ -797,6 +797,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+                <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const heroVideo = document.getElementById("heroVideo");
+
+    if (window.matchMedia("(min-width: 768px)").matches) {
+
+        heroVideo.src =
+        "https://res.cloudinary.com/vbcgaayb/video/upload/q_auto,f_auto,vc_auto,w_1280,h_720,c_fill/v1784010355/Comp_1_1_copy_n6khcy.webm";
+
+        heroVideo.load();
+        heroVideo.play().catch(() => {});
+    }
+
+});
+</script>
     </section>
   </div>
 </div>
